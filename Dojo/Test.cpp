@@ -41,7 +41,6 @@ TEST_F(MyTest, isContain3)
 {
 	EXPECT_EQ("Fizz",convert(13));
 	EXPECT_EQ("Fizz", convert(31));
-	EXPECT_EQ("Fizz", convert(3.1));
 }
 
 TEST_F(MyTest, isContain5)
