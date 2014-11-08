@@ -31,12 +31,9 @@ TEST_F(MyTest, InputMultipleof15)
 	EXPECT_EQ("FizzBuzz", convert(45));
 }
 
-TEST_F(MyTest, InputTooBig)
+TEST_F(MyTest, InputOutOfRange)
 {
+	EXPECT_THROW(convert(0), std::invalid_argument);
 	EXPECT_THROW(convert(101), std::invalid_argument);
 }
 
-TEST_F(MyTest, InputTooSmall)
-{
-	EXPECT_THROW(convert(0), std::invalid_argument);
-}
