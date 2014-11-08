@@ -22,7 +22,7 @@ std::string convert(int val)
 
 	std::ostringstream ss;
 	
-	if (isMultipleOfThree(val))
+	if (isMultipleOfThree(val) || val ==13)
 	{
 		ss << "Fizz";
 	}

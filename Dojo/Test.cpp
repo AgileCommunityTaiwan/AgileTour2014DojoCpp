@@ -37,3 +37,8 @@ TEST_F(MyTest, InputOutOfRange)
 	EXPECT_THROW(convert(101), std::invalid_argument);
 }
 
+TEST_F(MyTest, isContain3)
+{
+	EXPECT_EQ("Fizz",convert(13));
+	
+}
