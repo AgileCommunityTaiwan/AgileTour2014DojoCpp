@@ -12,14 +12,10 @@ bool isMultipleOfFive(int val)
 	return (val % 5 == 0);
 }
 
-bool isValueTooBig(int val)
-{
-	return val > 100;
-}
 
 std::string convert(int val)
 {
-	if (isValueTooBig(val) || val <= 0)
+	if (val > 100 || val <= 0)
 	{
 		throw std::invalid_argument("Value should be between 1 from 100!");
 	}
