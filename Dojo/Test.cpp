@@ -34,6 +34,6 @@ TEST_F(MyTest, InputMultipleof15)
 
 TEST_F(MyTest, InputTooBig)
 {
-	EXPECT_EQ("Value Too Big!", convert(101));
+	EXPECT_THROW(convert(101), std::exception);
 }
 

@@ -21,7 +21,7 @@ std::string convert(int val)
 {
 	if (isValueTooBig(val))
 	{
-		return "Value Too Big!";
+		throw std::exception();
 	}
 
 	std::ostringstream ss;
