@@ -12,4 +12,7 @@ TEST_F(MyTest, InputNormalNumber)
 	EXPECT_EQ("2", convert(2));
 }
 
-
+TEST_F(MyTest, InputThree)
+{
+	EXPECT_EQ("Fizz", convert(3));
+}
