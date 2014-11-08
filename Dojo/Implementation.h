@@ -12,6 +12,10 @@ bool isMultipleOfFive(int val)
 	return (val % 5 == 0);
 }
 
+bool isContain3(int val)
+{
+	return (val % 10 == 3) || (val / 10 == 3);
+}
 
 std::string convert(int val)
 {
@@ -22,7 +26,7 @@ std::string convert(int val)
 
 	std::ostringstream ss;
 	
-	if (isMultipleOfThree(val) || (val % 10 == 3) || (val/10 == 3))
+	if (isMultipleOfThree(val) || isContain3(val))
 	{
 		ss << "Fizz";
 	}
