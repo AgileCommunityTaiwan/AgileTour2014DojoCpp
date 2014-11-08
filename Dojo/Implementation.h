@@ -2,12 +2,12 @@
 #include <string>
 #include <sstream>
 
-bool isMultipleOfThree(int val)
+bool isMultipleOf3(int val)
 {
 	return (val % 3 == 0);
 }
 
-bool isMultipleOfFive(int val)
+bool isMultipleOf5(int val)
 {
 	return (val % 5 == 0);
 }
@@ -31,11 +31,11 @@ std::string convert(int val)
 
 	std::ostringstream ss;
 	
-	if (isMultipleOfThree(val) || isContain3(val))
+	if (isMultipleOf3(val) || isContain3(val))
 	{
 		ss << "Fizz";
 	}
-	if (isMultipleOfFive(val) || isContain5(val))
+	if (isMultipleOf5(val) || isContain5(val))
 	{
 		ss << "Buzz";
 	}
