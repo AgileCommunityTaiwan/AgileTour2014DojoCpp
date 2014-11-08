@@ -58,4 +58,6 @@ TEST_F(MyTest, isContain3and5)
 TEST_F(MyTest, InputMultipleof7)
 {
 	EXPECT_EQ("Whizz", convert(7));
+	EXPECT_EQ("FizzWhizz", convert(21));
+	EXPECT_EQ("BuzzWhizz", convert(70));
 }
