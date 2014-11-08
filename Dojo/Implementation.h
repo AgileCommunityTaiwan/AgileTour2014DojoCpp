@@ -22,7 +22,26 @@ std::string convert(int val)
 	}
 
 	std::ostringstream ss;
-	
+
+	std::vector<filter_t> filters;
+	filters.push_back(filter_t(3, "Fizz"));
+	filters.push_back(filter_t(5, "Buzz"));
+	filters.push_back(filter_t(7, "Whizz"));
+
+	for (auto i = filters.begin(); i != filters.end(); ++i)
+	{
+		if (i->filtered(val))
+		{
+			ss << i->symbol();
+		}
+	}
+
+
+
+
+
+
+
 	if (isMultipleOf<3>(val) || isContain<3>(val))
 	{
 		ss << "Fizz";
