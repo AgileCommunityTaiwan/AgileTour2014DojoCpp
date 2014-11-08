@@ -12,9 +12,12 @@ TEST_F(MyTest, InputNormalNumber)
 	EXPECT_EQ("2", convert(2));
 }
 
-TEST_F(MyTest, InputThree)
+TEST_F(MyTest, InputMultipleOfThree)
 {
 	EXPECT_EQ("Fizz", convert(3));
+	EXPECT_EQ("Fizz", convert(6));
+	EXPECT_EQ("Fizz", convert(9));
+
 }
 
 TEST_F(MyTest, InputFive)
