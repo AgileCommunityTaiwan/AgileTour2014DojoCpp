@@ -7,6 +7,11 @@ bool isMultipleOfThree(int val)
 	return (val % 3 == 0);
 }
 
+bool isMultipleOfFive(int val)
+{
+	return (val % 5 == 0);
+}
+
 std::string convert(int val)
 {
 	std::ostringstream ss;
@@ -18,7 +23,7 @@ std::string convert(int val)
 	{
 		return "Fizz";
 	}
-	else if (val % 5 == 0)
+	else if (isMultipleOfFive(val))
 	{
 		return "Buzz";
 	}
