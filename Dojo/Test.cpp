@@ -66,4 +66,7 @@ TEST_F(MyTest, isContain7)
 {
 	EXPECT_EQ("Whizz", convert(17));
 	EXPECT_EQ("Whizz", convert(71));
+	EXPECT_EQ("Whizz", convert(77));
+	EXPECT_EQ("FizzBuzzWhizz", convert(57));
+	EXPECT_EQ("FizzWhizz", convert(37));
 }
