@@ -17,21 +17,6 @@ bool isMultipleOf7(int val)
 	return (val % 7 == 0);
 }
 
-bool isContain3(int val)
-{
-	return (val % 10 == 3) || (val / 10 == 3);
-}
-
-bool isContain5(int val)
-{
-	return (val % 10 == 5) || (val / 10 == 5);
-}
-
-bool isContain7(int val)
-{
-	return (val % 10 == 7) || (val / 10 == 7);
-}
-
 template <int base>
 bool isContain(int val)
 {
