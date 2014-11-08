@@ -21,7 +21,7 @@ std::string convert(int val)
 {
 	if (isValueTooBig(val) || val <= 0)
 	{
-		throw std::invalid_argument("Value Too Big!");
+		throw std::invalid_argument("Value should be between 1 from 100!");
 	}
 
 	std::ostringstream ss;
