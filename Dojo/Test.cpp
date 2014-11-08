@@ -26,12 +26,14 @@ TEST_F(MyTest, InputMultipleOfFive)
 	EXPECT_EQ("Buzz", convert(10));
 }
 
-TEST_F(MyTest, InputFifteen)
+TEST_F(MyTest, InputMultipleof15)
 {
 	EXPECT_EQ("FizzBuzz", convert(15));
-}
-
-TEST_F(MyTest, Input45)
-{
 	EXPECT_EQ("FizzBuzz", convert(45));
 }
+
+TEST_F(MyTest, InputTooBig)
+{
+	EXPECT_EQ("101", convert(101));
+}
+
