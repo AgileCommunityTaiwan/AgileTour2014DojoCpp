@@ -39,6 +39,10 @@ std::string convert(int val)
 	{
 		ss << "Buzz";
 	}
+	if (val % 7 == 0)
+	{
+		ss << "Whizz";
+	}
 	if (ss.str().empty() )
 	{
 		ss << val;
