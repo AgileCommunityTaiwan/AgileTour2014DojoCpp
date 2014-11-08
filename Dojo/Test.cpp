@@ -40,5 +40,5 @@ TEST_F(MyTest, InputOutOfRange)
 TEST_F(MyTest, isContain3)
 {
 	EXPECT_EQ("Fizz",convert(13));
-	
+	EXPECT_EQ("Fizz", convert(31));
 }
