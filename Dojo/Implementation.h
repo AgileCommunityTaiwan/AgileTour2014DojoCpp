@@ -12,8 +12,18 @@ bool isMultipleOfFive(int val)
 	return (val % 5 == 0);
 }
 
+bool isValueTooBig(int val)
+{
+	return val > 100;
+}
+
 std::string convert(int val)
 {
+	if (isValueTooBig(val))
+	{
+		return "Value Too Big!";
+	}
+
 	std::ostringstream ss;
 	if (isMultipleOfThree(val) && isMultipleOfFive(val))
 	{

@@ -34,6 +34,6 @@ TEST_F(MyTest, InputMultipleof15)
 
 TEST_F(MyTest, InputTooBig)
 {
-	EXPECT_EQ("101", convert(101));
+	EXPECT_EQ("Value Too Big!", convert(101));
 }
 
