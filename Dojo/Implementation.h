@@ -21,21 +21,18 @@ std::string convert(int val)
 	}
 
 	std::ostringstream ss;
-	if (isMultipleOfThree(val) && isMultipleOfFive(val))
+	
+	if (isMultipleOfThree(val))
 	{
-		return "FizzBuzz";
+		ss << "Fizz";
 	}
-	else if (isMultipleOfThree(val))
+	if (isMultipleOfFive(val))
 	{
-		return "Fizz";
+		ss << "Buzz";
 	}
-	else if (isMultipleOfFive(val))
-	{
-		return "Buzz";
-	}
-	else
+	if (ss.str().empty() )
 	{
 		ss << val;
-		return ss.str();
 	}
+	return ss.str();
 }
