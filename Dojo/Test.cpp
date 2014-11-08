@@ -30,3 +30,8 @@ TEST_F(MyTest, InputFifteen)
 {
 	EXPECT_EQ("FizzBuzz", convert(15));
 }
+
+TEST_F(MyTest, Input45)
+{
+	EXPECT_EQ("FizzBuzz", convert(45));
+}
