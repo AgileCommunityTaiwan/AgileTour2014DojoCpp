@@ -42,11 +42,11 @@ std::string convert(int val)
 	{
 		ss << "Fizz";
 	}
-	if (isMultipleOf5(val) || isContain<5>(val))
+	if (isMultipleOf<5>(val) || isContain<5>(val))
 	{
 		ss << "Buzz";
 	}
-	if (isMultipleOf7(val) || isContain<7>(val))
+	if (isMultipleOf<7>(val) || isContain<7>(val))
 	{
 		ss << "Whizz";
 	}
