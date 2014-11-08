@@ -2,21 +2,6 @@
 #include <string>
 #include <sstream>
 
-bool isMultipleOf3(int val)
-{
-	return (val % 3 == 0);
-}
-
-bool isMultipleOf5(int val)
-{
-	return (val % 5 == 0);
-}
-
-bool isMultipleOf7(int val)
-{
-	return (val % 7 == 0);
-}
-
 template <int base>
 bool isMultipleOf(int val)
 {
