@@ -37,3 +37,7 @@ TEST_F(MyTest, InputTooBig)
 	EXPECT_THROW(convert(101), std::invalid_argument);
 }
 
+TEST_F(MyTest, InputTooSmall)
+{
+	EXPECT_THROW(convert(0), std::invalid_argument);
+}

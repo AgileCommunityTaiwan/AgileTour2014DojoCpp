@@ -19,7 +19,7 @@ bool isValueTooBig(int val)
 
 std::string convert(int val)
 {
-	if (isValueTooBig(val))
+	if (isValueTooBig(val) || val <= 0)
 	{
 		throw std::invalid_argument("Value Too Big!");
 	}
