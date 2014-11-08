@@ -16,3 +16,8 @@ TEST_F(MyTest, InputThree)
 {
 	EXPECT_EQ("Fizz", convert(3));
 }
+
+TEST_F(MyTest, InputFive)
+{
+	EXPECT_EQ("Buzz", convert(5));
+}

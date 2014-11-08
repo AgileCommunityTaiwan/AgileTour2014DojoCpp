@@ -9,6 +9,10 @@ std::string convert(int val)
 	{
 		return "Fizz";
 	}
+	else if (val == 5)
+	{
+		return "Buzz";
+	}
 	else
 	{
 		ss << val;
