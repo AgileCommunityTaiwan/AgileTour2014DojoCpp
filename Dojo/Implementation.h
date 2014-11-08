@@ -2,6 +2,11 @@
 #include <string>
 #include <sstream>
 
+bool isMultipleOfThree(int val)
+{
+	return (val % 3 == 0);
+}
+
 std::string convert(int val)
 {
 	std::ostringstream ss;
@@ -9,7 +14,7 @@ std::string convert(int val)
 	{
 		return "FizzBuzz";
 	}
-	else if (val % 3 == 0)
+	else if (isMultipleOfThree(val))
 	{
 		return "Fizz";
 	}
