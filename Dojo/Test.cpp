@@ -20,7 +20,8 @@ TEST_F(MyTest, InputMultipleOfThree)
 
 }
 
-TEST_F(MyTest, InputFive)
+TEST_F(MyTest, InputMultipleOfFive)
 {
 	EXPECT_EQ("Buzz", convert(5));
+	EXPECT_EQ("Buzz", convert(10));
 }

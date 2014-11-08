@@ -9,7 +9,7 @@ std::string convert(int val)
 	{
 		return "Fizz";
 	}
-	else if (val == 5)
+	else if (val % 5 == 0)
 	{
 		return "Buzz";
 	}
