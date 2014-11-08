@@ -27,6 +27,11 @@ bool isContain5(int val)
 	return (val % 10 == 5) || (val / 10 == 5);
 }
 
+bool isContain7(int val)
+{
+	return (val % 10 == 7) || (val / 10 == 7);
+}
+
 std::string convert(int val)
 {
 	if (val > 100 || val <= 0)
@@ -44,7 +49,7 @@ std::string convert(int val)
 	{
 		ss << "Buzz";
 	}
-	if (isMultipleOf7(val))
+	if (isMultipleOf7(val) || isContain7(val))
 	{
 		ss << "Whizz";
 	}
