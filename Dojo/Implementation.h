@@ -32,6 +32,12 @@ bool isContain7(int val)
 	return (val % 10 == 7) || (val / 10 == 7);
 }
 
+template <int base>
+bool isContain(int val)
+{
+	return (val % 10 == base) || (val / 10 == base);
+}
+
 std::string convert(int val)
 {
 	if (val > 100 || val <= 0)
@@ -41,7 +47,7 @@ std::string convert(int val)
 
 	std::ostringstream ss;
 	
-	if (isMultipleOf3(val) || isContain3(val))
+	if (isMultipleOf3(val) || isContain<3>(val))
 	{
 		ss << "Fizz";
 	}
