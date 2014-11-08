@@ -12,6 +12,11 @@ bool isMultipleOf5(int val)
 	return (val % 5 == 0);
 }
 
+bool isMultipleOf7(int val)
+{
+	return (val % 7 == 0);
+}
+
 bool isContain3(int val)
 {
 	return (val % 10 == 3) || (val / 10 == 3);
@@ -39,7 +44,7 @@ std::string convert(int val)
 	{
 		ss << "Buzz";
 	}
-	if (val % 7 == 0)
+	if (isMultipleOf7(val))
 	{
 		ss << "Whizz";
 	}
