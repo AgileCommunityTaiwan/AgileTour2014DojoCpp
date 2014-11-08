@@ -6,10 +6,8 @@ class MyTest : public ::testing::Test
 {
 };
 
-
-TEST_F(MyTest, Test1)
+TEST_F(MyTest, InputOne)
 {
-	//.......
-	EXPECT_EQ(2, OnePlusOne());
+	EXPECT_EQ("1", convert(1));
 }
 

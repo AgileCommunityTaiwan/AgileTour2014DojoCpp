@@ -1,6 +1,7 @@
 #pragma once
+#include <string>
 
-int OnePlusOne()
+std::string convert(int val)
 {
-	return 1 + 1;
+	return "1";
 }
