@@ -34,6 +34,6 @@ TEST_F(MyTest, InputMultipleof15)
 
 TEST_F(MyTest, InputTooBig)
 {
-	EXPECT_THROW(convert(101), std::exception);
+	EXPECT_THROW(convert(101), std::invalid_argument);
 }
 
