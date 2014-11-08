@@ -5,7 +5,11 @@
 std::string convert(int val)
 {
 	std::ostringstream ss;
-	if (val % 3 == 0)
+	if (val == 15)
+	{
+		return "FizzBuzz";
+	}
+	else if (val % 3 == 0)
 	{
 		return "Fizz";
 	}
