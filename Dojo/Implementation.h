@@ -1,7 +1,10 @@
 #pragma once
 #include <string>
+#include <sstream>
 
 std::string convert(int val)
 {
-	return "1";
+	std::ostringstream ss;
+	ss << val;
+	return ss.str();
 }
