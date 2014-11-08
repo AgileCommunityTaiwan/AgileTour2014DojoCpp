@@ -18,6 +18,12 @@ bool isMultipleOf7(int val)
 }
 
 template <int base>
+bool isMultipleOf(int val)
+{
+	return (val % base == 0);
+}
+
+template <int base>
 bool isContain(int val)
 {
 	return (val % 10 == base) || (val / 10 == base);
@@ -32,7 +38,7 @@ std::string convert(int val)
 
 	std::ostringstream ss;
 	
-	if (isMultipleOf3(val) || isContain<3>(val))
+	if (isMultipleOf<3>(val) || isContain<3>(val))
 	{
 		ss << "Fizz";
 	}
